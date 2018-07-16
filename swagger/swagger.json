@@ -1,0 +1,387 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "mobile API",
+        "description": "mobile has every tool to get any job done, so codename for the new mobile APIs.",
+        "version": "1.0.0",
+        "contact": {
+            "email": "astaxie@gmail.com"
+        }
+    },
+    "basePath": "/v1",
+    "paths": {
+        "/addUser/addUser": {
+            "post": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "add user",
+                "operationId": "UserController.AddUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/addUser/creatUser": {
+            "post": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "create user",
+                "operationId": "UserController.CreatUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/addUser/health": {
+            "get": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "Get Health info",
+                "operationId": "UserController.Get Health",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "time",
+                        "description": "category id",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "sign",
+                        "description": "brand id",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "source",
+                        "description": "query of search",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/creatUser/addUser": {
+            "post": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "add user",
+                "operationId": "UserController.AddUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/creatUser/creatUser": {
+            "post": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "create user",
+                "operationId": "UserController.CreatUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/creatUser/health": {
+            "get": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "Get Health info",
+                "operationId": "UserController.Get Health",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "time",
+                        "description": "category id",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "sign",
+                        "description": "brand id",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "source",
+                        "description": "query of search",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        },
+        "/health/addUser": {
+            "post": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "add user",
+                "operationId": "UserController.AddUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/health/creatUser": {
+            "post": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "create user",
+                "operationId": "UserController.CreatUser",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "The email for login",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid email supplied"
+                    },
+                    "404": {
+                        "description": "User not found"
+                    }
+                }
+            }
+        },
+        "/health/health": {
+            "get": {
+                "tags": [
+                    "creatUser"
+                ],
+                "description": "Get Health info",
+                "operationId": "UserController.Get Health",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "time",
+                        "description": "category id",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "sign",
+                        "description": "brand id",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "source",
+                        "description": "query of search",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.User"
+                        }
+                    },
+                    "400": {
+                        "description": "no enough input"
+                    },
+                    "500": {
+                        "description": "get products common error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "models.User": {
+            "title": "User",
+            "type": "object",
+            "properties": {
+                "CreateTime": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "Id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "LastTime": {
+                    "type": "string",
+                    "format": "string"
+                },
+                "Psw": {
+                    "type": "string"
+                },
+                "Uname": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "addUser",
+            "description": "Operations about User\n"
+        },
+        {
+            "name": "health",
+            "description": "Operations about User\n"
+        },
+        {
+            "name": "creatUser",
+            "description": "Operations about User\n"
+        }
+    ]
+}
